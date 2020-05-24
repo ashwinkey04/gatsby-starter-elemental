@@ -1,16 +1,21 @@
+require(`dotenv`).config({
+  path: `.env`,
+})
+
 const siteMetadata = {
-    title: `Elemental`,
-    siteUrl: `http://localhost`,
-    capitalizeTitleOnHome: true,
+    title: `Ashwin`,
+    pathPrefix: `/gatsby-starter-elemental`,
+    siteUrl: `https://ashwinkey04.github.io/gatsby-starter-elemental`,
+    capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
     titleImage: `/images/wall.jpg`,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-    author: `@_akzhy`,
+    introTag: `Mobile software developer | Problem Solver`,
+    description: `Humbly beginning`,
+    author: `@ashwinkey04`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
-    darkmode: true,
+    darkmode: false,
     switchTheme: true,
     navLinks: [
         {
@@ -41,38 +46,38 @@ const siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental"
+            url: "https://github.com/ashwinkey04"
         }
     ],
     social: [
         {
-            name: "Facebook",
-            icon: "/images/Facebook.svg",
-            url: "#"
+            name: "GitHub",
+            icon: "/images/Github.svg",
+            url: "https://www.github.com/ashwinkey04"
         },
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
-            url: "#"
+            url: "https://www.twitter.com/ashwinkey04"
         },
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
-            url: "#"
+            url: "https://www.instagram.com/ashwin.apk"
         },
         {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
-            url: "#"
+            name: "Telegram",
+            icon: "/images/Telegram.svg",
+            url: "https://t.me/ashwinkey04"
         }
     ],
     contact: {
         /* Leave the below value completely empty (no space either) if you don't want a contact form. */
-        api_url: "./test.json",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation"
+        api_url: "",
+        description: `Reach me`,
+        mail: "ashwinkey04@gmail.com",
+        phone: "+91 80569 54189",
+        address: "Coimbatore, TN \nIndia"
     }
     // this is optional. you can uncomment this if you use disqus
     // disqus: `your-disqus-shortname`

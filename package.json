@@ -2,12 +2,12 @@
 	"name": "gatsby-starter-elemental",
 	"description": "A simple starter to get up and developing quickly with Gatsby",
 	"version": "0.1.0",
-	"author": "Akshay <hi@akzhy.com>",
+	"author": "Ashwin <ashwinkey04@gmail.com>",
 	"dependencies": {
 		"gatsby": "^2.10.4",
 		"gatsby-custom-md": "^1.0.2",
 		"gatsby-image": "^2.2.3",
-		"gatsby-plugin-disqus": "^1.1.4",
+		"gatsby-plugin-disqus": "^1.1.6",
 		"gatsby-plugin-less": "^2.1.0",
 		"gatsby-plugin-manifest": "^2.2.0",
 		"gatsby-plugin-offline": "^2.2.0",
@@ -26,6 +26,7 @@
 		"react-sidebar": "^3.0.2"
 	},
 	"devDependencies": {
+		"gh-pages": "^2.2.0",
 		"prettier": "^1.18.2"
 	},
 	"keywords": [
@@ -33,11 +34,12 @@
 	],
 	"license": "MIT",
 	"scripts": {
-		"build": "gatsby build",
+		"build": "gatsby build --prefix-paths",
 		"develop": "gatsby develop",
+		"deploy": "gatsby build --prefix-paths && gh-pages -d public",
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"start": "npm run develop",
-		"serve": "gatsby serve",
+		"serve": "gatsby serve --prefix-paths -o",
 		"prettier": "prettier --write **/*.{ts,js,css,html}"
 	},
 	"repository": {
